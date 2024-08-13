@@ -1,0 +1,55 @@
+/* Base styles for the outer container */
+.outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  /* Full viewport width */
+  height: 100vh;
+  /* Full viewport height */
+}
+
+/* Base styles for the responsive container */
+.responsive-container {
+  border: 2px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  /* Fixed height */
+}
+
+/* Styles for the iframe */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Media queries for responsive behavior */
+@media (min-width: 1024px) {
+
+  /* Large screens */
+  .responsive-container {
+    max-width: 70vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  /* Tablet screens */
+  .responsive-container {
+    max-width: 50vw;
+  }
+}
+
+@media (max-width: 399px) {
+
+  /* Mobile screens */
+  .responsive-container {
+    max-width: 60vw;
+  }
+}
